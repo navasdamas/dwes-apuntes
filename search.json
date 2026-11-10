@@ -1,0 +1,34 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Desarrollo Web en Entorno Servidor",
+    "section": "",
+    "text": "Presentación\nApuntes del módulo Desarrollo Web Entorno Servidor",
+    "crumbs": [
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "temas/t01-sintaxis.html",
+    "href": "temas/t01-sintaxis.html",
+    "title": "1  Sintaxis básica de PHP",
+    "section": "",
+    "text": "1.1 Variables\nLas variables empiezan por $:",
+    "crumbs": [
+      "PHP",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Sintaxis básica de PHP</span>"
+    ]
+  },
+  {
+    "objectID": "temas/t01-sintaxis.html#variables",
+    "href": "temas/t01-sintaxis.html#variables",
+    "title": "1  Sintaxis básica de PHP",
+    "section": "",
+    "text": "Tip\n\n\n\nEjecuta el ejemplo con php 01-variables.php.",
+    "crumbs": [
+      "PHP",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Sintaxis básica de PHP</span>"
+    ]
+  }
+]
