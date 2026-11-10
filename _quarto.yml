@@ -7,9 +7,9 @@ book:
   author: "Manuel Navas Damas"
   chapters:
     - index.qmd
-    - part: "PHP"
+    - part: "Bases"
       chapters:
-        - temas/t01-sintaxis.qmd
+        - temas/0-bases/m00-t01-html.qmd
 
 filters:
   - include-code-files

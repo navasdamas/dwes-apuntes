@@ -1,0 +1,122 @@
+# HTML
+
+Cualquier página web que visitemos se apoya en **HTML** (*HyperText Markup Language*): es el lenguaje que define su **estructura** y organiza su **contenido**. Por eso, antes de pasar a estilos, programación en el cliente o desarrollo en el servidor, necesitamos manejarlo con soltura.
+
+Empezaremos por lo básico y aumentaremos la complejidad poco a poco:
+
+- **La estructura básica de un documento**.
+- **Formularios**.
+- **Semántica**.
+- **Accesibilidad**.
+- **WebMCP**: el nuevo estándar que permite que nuestros **formularios** funcionen como **herramientas para agentes de IA**.
+
+
+## ¿Qué es HTML?
+
+Da igual qué página visitemos: una plataforma de vídeo, un repositorio de código o una tienda online. En todos los casos, el **navegador** está interpretando **HTML**. Es el **lenguaje común** que todos los navegadores del mundo son capaces de entender, y sin él **la web no existiría**.
+
+### Objetivos de esta lección
+
+Al terminar, seremos capaces de:
+
+- Explicar **qué es HTML**.
+- Comprender **cómo funciona internamente**.
+- Crear nuestro **primer archivo HTML** y **abrirlo en el navegador**.
+
+### El significado de las siglas
+
+**HTML** corresponde a ***HyperText Markup Language***, que en español se traduce como **Lenguaje de Marcado de Hipertexto**. Analicemos cada parte del nombre:
+
+| Término | Significado |
+|---|---|
+| **HyperText** (hipertexto) | Texto que se **conecta con otros textos**. Al pulsar un enlace que nos lleva a otra página, estamos usando hipertexto. |
+| **Markup** (marcado) | Mediante **etiquetas** indicamos al navegador **qué representa cada elemento**: un título, un párrafo, una imagen… |
+| **Language** (lenguaje) | Es un lenguaje, pero **no de programación**: carece de lógica, bucles y condiciones. Su única función es **describir la estructura**. |
+
+### Qué hace HTML (y qué no)
+
+Para entender bien su papel, conviene compararlo con otras dos tecnologías:
+
+- **HTML** indica **qué elementos hay** en la página: *"aquí hay un botón"*.
+- **CSS** determina **cómo se ven**, por ejemplo el color de ese botón.
+- **JavaScript** define **qué ocurre** al interactuar con ellos, como al pulsar el botón.
+
+> **Importante:** HTML **no es un lenguaje de programación**. Solo describe la estructura del contenido.
+
+### El funcionamiento del navegador
+
+Al introducir una **URL** y pulsar *Enter*, se desencadena una secuencia que apenas dura unos **milisegundos**:
+
+1. **Petición:** el navegador solicita la página al **servidor** que la aloja.
+2. **Respuesta:** el servidor devuelve un **archivo `.html`**, normalmente junto con archivos **CSS** y **JavaScript**.
+3. **Interpretación:** el navegador recorre el HTML **de principio a fin**, genera la **estructura** de la página y la **presenta en pantalla**.
+
+### El renderizado
+
+Llamamos **renderizado** al proceso por el cual el navegador **lee el HTML y construye lo que vemos**. Es decir, transforma un **texto plano** en una **interfaz visual**.
+
+> **Clave:** cada etiqueta HTML funciona como una **instrucción** para el navegador: *"coloca aquí un título"*, *"inserta una imagen"*, *"esto es un enlace"*.
+
+### Creando nuestro primer archivo HTML
+
+Vamos a pasar a la práctica siguiendo estos pasos:
+
+1. Crea en tu ordenador una **carpeta** con el nombre `mi-primera-web`.
+2. Dentro de ella, crea un **archivo** llamado `index.html`.
+3. Copia en él el siguiente **código**:
+
+```{.html include="../../ejemplos/base/t01-ej01-mi-primera-web.html"}
+```
+
+
+4. **Abre el archivo en el navegador**, ya sea con **doble clic** o **arrastrándolo** a una ventana del navegador.
+
+#### Analizando el código
+
+| Código | Función |
+|---|---|
+| `<!DOCTYPE html>` | Indica al navegador que el documento está escrito en **HTML5**. |
+| `<html lang="es">` | Es el **elemento raíz** que contiene toda la página. El atributo `lang` señala que el contenido está en **español**. |
+| `<head>` | Agrupa la **información sobre el documento**, que no se muestra dentro de la página. |
+| `<meta charset="UTF-8">` | Define la **codificación de caracteres**, para que tildes y eñes se muestren correctamente. |
+| `<title>` | Establece el **título** que aparece en la **pestaña del navegador**. |
+| `<body>` | Contiene todo el **contenido visible** de la página. |
+| `<h1>` | Crea el **encabezado principal**. |
+| `<p>` | Crea un **párrafo**. |
+
+#### Resultado
+
+Al abrir el archivo veremos:
+
+- En la **pestaña** del navegador, el texto *"Librería Abisal — Libros bajo el mar"*.
+- En la página, el **título** *"Te damos la bienvenida a Librería Abisal"* en letra grande y negrita.
+- Debajo, **dos párrafos** con la descripción y el horario.
+
+> **Conclusión:** así funciona HTML en la práctica. El navegador toma un **texto plano** y lo convierte en una **página web**.
+
+### Las etiquetas: el pilar de HTML
+
+HTML se basa en el uso de **etiquetas** (*tags*). La **mayoría** se escriben **en pareja**: una de **apertura** y otra de **cierre**.
+
+```html
+<h1>Este texto es un encabezado</h1>
+<p>Este texto es un párrafo</p>
+```
+
+En cada pareja distinguimos tres partes:
+
+- **Etiqueta de apertura:** `<h1>`.
+- **Etiqueta de cierre:** `</h1>`, que se diferencia de la anterior por la **barra** (`/`).
+- **Contenido:** todo lo que queda **entre ambas etiquetas**.
+
+#### Etiquetas vacías
+
+Hay etiquetas que **no llevan cierre**, ya que **no envuelven ningún contenido**:
+
+```html
+<img src="pulpo-lector.jpg" alt="Pulpo leyendo un libro">
+<br>
+<hr>
+```
+
+Reciben el nombre de **etiquetas vacías** (*void elements*). No contienen nada en su interior; solo pueden llevar **atributos**.
