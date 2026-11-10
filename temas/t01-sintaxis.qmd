@@ -1,0 +1,12 @@
+# Sintaxis básica de PHP
+
+## Variables
+
+Las variables empiezan por `$`:
+
+```{.php include="../ejemplos/php/t01-sintaxis/01-variables.php"}
+```
+
+::: {.callout-tip}
+Ejecuta el ejemplo con `php 01-variables.php`.
+:::

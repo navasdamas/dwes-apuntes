@@ -1,0 +1,28 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Desarrollo Web en Entorno Servidor"
+  author: "Manuel Navas Damas"
+  chapters:
+    - index.qmd
+    - part: "PHP"
+      chapters:
+        - temas/t01-sintaxis.qmd
+
+filters:
+  - include-code-files
+
+lang: es
+
+format:
+  html:
+    theme: cosmo
+    code-copy: true
+    toc: true
+  pdf:
+    documentclass: scrreprt
+
+
+
